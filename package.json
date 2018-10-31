@@ -65,8 +65,8 @@
   "scripts": {
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
-    "start-js": "npm-run-all serve",
-    "start": "npm-run-all -p watch-css start-js",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all serve",
     "start-sandbox": "npm-run-all -p watch-css start-js",
     "start-stage": "npm-run-all -p watch-css start-js ngrok",
     "build-js": "react-scripts build",
