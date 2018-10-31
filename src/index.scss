@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+:focus {
+  outline: none;
+}
+
+.speed-dial-horizontal div[class^="SpeedDial-actions-"] {
+  display: flex;
+  margin-bottom: 16px;
+  flex-direction: inherit;
+}
+
+.speed-dial-horizontal div[class^="SpeedDial-root-"] {
+  z-index: 1050;
+  display: flex;
+  flex-direction: initial;
+}
+
+a {
+  color: #263238;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: prop 5ms;
+  -moz-transition: prop 5ms;
+  -ms-transition: prop 5ms;
+  -o-transition: prop 5ms;
+  transition: prop 5ms;
+}
+
+.btn {
+  border-radius: 0;
+  background-image: none;
+  padding: 6px 30px;
+  font-size: 14px;
+  text-shadow: none;
+  box-shadow: none;
+  &.btn-primary {
+    background-color: #f22f46;
+    border-color: #f22f46;
+    &:active,
+    &:hover,
+    &:focus {
+      background-color: #c41025;
+      border-color: #c41025;
+    }
+  }
+}
+
+.navbar {
+  margin-bottom: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+  background-color: #e6e6e6;
+  background-image: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+}
+
+button {
+  i.fa {
+    margin: 4px;
+  }
+}
+
+.dx_tables tbody td {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.5em;
+}
+
+.dx_tables tbody tr {
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.dx_tables tbody tr:hover {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
