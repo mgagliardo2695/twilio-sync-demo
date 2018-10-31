@@ -2,7 +2,6 @@ node_modules
 *.css
 .idea
 .DS_Store
-build
 backend/.env
 /.env
 /.idea/
@@ -163,3 +162,4 @@ fabric.properties
 .idea/httpRequests
 
 /package-lock.json
+/build/
