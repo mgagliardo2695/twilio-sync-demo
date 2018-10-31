@@ -10,7 +10,7 @@ import { SortableElement } from 'react-sortable-hoc';
 import { RIEInput } from 'riek';
 import _ from 'lodash';
 
-import Button from '@material-ui/core/es/Button/Button';
+import Button from '@material-ui/core/Button/Button';
 import Grid from '@material-ui/core/Grid/Grid';
 import { withRouter } from 'react-router-dom';
 import { withStyles } from '@material-ui/core';
