@@ -1,0 +1,97 @@
+@mixin transition($transition...) {
+  -moz-transition:    $transition;
+  -o-transition:      $transition;
+  -webkit-transition: $transition;
+  transition:         $transition;
+}
+@mixin transition-property($property...) {
+  -moz-transition-property:    $property;
+  -o-transition-property:      $property;
+  -webkit-transition-property: $property;
+  transition-property:         $property;
+}
+@mixin transition-duration($duration...) {
+  -moz-transition-property:    $duration;
+  -o-transition-property:      $duration;
+  -webkit-transition-property: $duration;
+  transition-property:         $duration;
+}
+@mixin transition-timing-function($timing...) {
+  -moz-transition-timing-function:    $timing;
+  -o-transition-timing-function:      $timing;
+  -webkit-transition-timing-function: $timing;
+  transition-timing-function:         $timing;
+}
+@mixin transition-delay($delay...) {
+  -moz-transition-delay:    $delay;
+  -o-transition-delay:      $delay;
+  -webkit-transition-delay: $delay;
+  transition-delay:         $delay;
+}
+
+.row {
+  border: 0.25px solid #e6e6e6;
+  margin: 15px 0;
+  list-style: none;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  z-index: 999999;
+  font-size: 18px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  cursor: move;
+  &__title-row {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 18px;
+    flex-grow: 1;
+  }
+
+  &__title p, &__title div {
+    display: inline;
+  }
+
+  &__dragable {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    &:hover {
+      background-color: #eee;
+    }
+  }
+
+  &__edit-me {
+    background: lightyellow;
+    margin-left: 15px;
+  }
+
+  &__editor {
+    margin-left: 30px;
+    font-size: 18px;
+    border: 0px solid transparent;
+    width: 80%;
+    @include transition(font-size .25s, font-weight .5s, padding .25s);
+    &:hover {
+      font-weight: bold;
+      cursor: pointer;
+    }
+    &:focus {
+      font-weight: initial;
+      padding: 5px;
+      margin-left: 15px;
+      background: lightyellow;
+      border: 1px solid #e6e6e6;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+    }
+  }
+
+}
+
